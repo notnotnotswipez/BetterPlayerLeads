@@ -1,0 +1,8 @@
+name: BetterPlayerLeads
+version: '${project.version}'
+main: me.swipez.betterplayerleads.BetterPlayerLeads
+api-version: 1.18
+authors: [ notnotnotswipez ]
+commands:
+  ropelength:
+    usage: /ropelength <player> <length>
