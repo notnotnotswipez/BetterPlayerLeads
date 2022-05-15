@@ -17,9 +17,6 @@ import java.util.UUID;
 
 public class LeadData {
 
-    static ScoreboardManager scoreboardManager = Bukkit.getScoreboardManager();
-    static Scoreboard scoreboard = scoreboardManager.getNewScoreboard();
-
     private final UUID dataMain;
     private UUID owner = null;
     private List<UUID> victims = new ArrayList<>();
