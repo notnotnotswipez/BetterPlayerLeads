@@ -9,9 +9,9 @@ commands:
 permissions:
     betterleads.all:
       children:
-        betterleads.lead:
+        betterplayerleads.lead:
           description: Allows players to lead other players.
           default: true
-        betterleads.command:
+        betterplayerleads.command:
           description: Allows players to use the rope length command.
           default: true

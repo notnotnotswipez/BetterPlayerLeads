@@ -143,7 +143,7 @@ public class LeadInteractionListener implements Listener {
             }
         }
         if (event.getRightClicked() instanceof Player clicked) {
-            if (!clicked.hasPermission("betterleads.lead")){
+            if (!clicked.hasPermission("betterplayerleads.lead")){
                 return;
             }
             if (clicked.getWorld().getDifficulty().equals(Difficulty.PEACEFUL)){
