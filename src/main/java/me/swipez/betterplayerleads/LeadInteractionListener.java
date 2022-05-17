@@ -144,7 +144,9 @@ public class LeadInteractionListener implements Listener {
         }
         if (event.getRightClicked() instanceof Player clicked) {
             if (clicked.getWorld().getDifficulty().equals(Difficulty.PEACEFUL)){
-                event.getPlayer().sendMessage(ChatColor.RED+"This world is in peaceful! You cannot lead players.");
+                if (event.getPlayer().getInventory().getItemInMainHand().getType().equals(Material.LEAD)){
+                    event.getPlayer().sendMessage(ChatColor.RED+"This world is in peaceful! You cannot lead players.");
+                }
                 return;
             }
             LeadData data = null;
