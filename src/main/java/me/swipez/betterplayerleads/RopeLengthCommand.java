@@ -11,6 +11,10 @@ public class RopeLengthCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof Player player){
+            if (!sender.hasPermission("betterleads.lead")){
+                player.sendMessage(ChatColor.RED+"You do not have permission to run this command!");
+                return true;
+            }
             if (args.length != 2){
                 player.sendMessage(ChatColor.YELLOW+"Invalid Usage: /ropelength <player> <length>!");
                 return true;

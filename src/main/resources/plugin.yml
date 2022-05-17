@@ -6,3 +6,12 @@ authors: [ notnotnotswipez ]
 commands:
   ropelength:
     usage: /ropelength <player> <length>
+permissions:
+    betterleads.all:
+      children:
+        betterleads.lead:
+          description: Allows players to lead other players.
+          default: true
+        betterleads.command:
+          description: Allows players to use the rope length command.
+          default: true

@@ -143,6 +143,9 @@ public class LeadInteractionListener implements Listener {
             }
         }
         if (event.getRightClicked() instanceof Player clicked) {
+            if (!clicked.hasPermission("betterleads.lead")){
+                return;
+            }
             if (clicked.getWorld().getDifficulty().equals(Difficulty.PEACEFUL)){
                 if (event.getPlayer().getInventory().getItemInMainHand().getType().equals(Material.LEAD)){
                     event.getPlayer().sendMessage(ChatColor.RED+"This world is in peaceful! You cannot lead players.");
